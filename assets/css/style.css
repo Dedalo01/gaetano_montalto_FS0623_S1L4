@@ -1,0 +1,280 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* IMPOSTAZIONI GENERALI */
+
+*,
+::after,
+::before {
+  margin: 0 0.1rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("/assets/img/sfondo.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+main,
+aside {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  border: none;
+}
+
+strong {
+  font-weight: bold;
+  color: #a92272;
+}
+
+/* GLOBAL CLASSES */
+.center {
+  width: 90vw;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 0 3px 5px grey;
+}
+
+.card {
+  background-color: #e2e2e3;
+  padding: 1.1rem;
+  margin: 1rem 0.2rem;
+}
+
+/* HEADER */
+header {
+  background: rgb(64, 146, 178);
+  background: linear-gradient(
+    138deg,
+    rgba(64, 146, 178, 1) 23%,
+    rgba(46, 106, 133, 1) 66%
+  );
+  text-align: center;
+  color: white;
+}
+
+header p,
+ul {
+  font-size: 1.4rem;
+}
+
+.header-title img {
+  margin-bottom: 1.2rem;
+}
+
+.header-title > p {
+  text-transform: uppercase;
+}
+
+nav ul {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+ul a {
+  color: white;
+}
+
+ul a:hover {
+  color: aquamarine;
+}
+
+header ul li::before {
+  content: "=>";
+}
+
+header ul li::after {
+  content: "<=";
+}
+
+/* MAIN */
+main.center {
+  margin-bottom: 0;
+  box-shadow: 0 0 5px grey;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+main h1 + p {
+  color: grey;
+}
+
+main ul {
+  font-size: 1.2rem;
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+main ul li {
+  margin: 0.3rem;
+}
+
+main ul code {
+  display: inline-block;
+  background-color: #e5e8e5;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+}
+
+main ol {
+  font-size: 1.2rem;
+  list-style: decimal;
+  margin-left: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+main table + p a {
+  text-decoration: underline;
+  color: #009ecb;
+  font-weight: bold;
+}
+
+main iframe {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+/* TABELLE */
+table caption {
+  font-style: italic;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+thead th {
+  border-right: 1px rgb(173, 223, 248) solid;
+  background-color: #4869c7;
+  padding: 1rem;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightgrey;
+  border-top: 3px grey solid;
+  border-bottom: 3px grey solid;
+}
+
+tbody tr:last-child {
+  border-bottom: 4px #3569d6 solid;
+}
+
+tbody td {
+  padding: 1rem;
+}
+
+/* FORM */
+section h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form input {
+  width: 80%;
+  padding: 0.5rem 0.1rem;
+  border: none;
+  border-bottom: 2px dashed black;
+}
+
+form button {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 0.4rem;
+  background-color: #3569d6;
+  border: none;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside.center {
+  margin-top: 0;
+  box-shadow: 0 3px 5px grey;
+}
+
+aside h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+aside a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #009ecb;
+}
+
+aside .card p:last-child {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(34, 83, 100);
+  background: linear-gradient(
+    180deg,
+    rgba(34, 83, 100, 1) 23%,
+    rgba(47, 56, 55, 1) 82%
+  );
+  text-align: center;
+  color: white;
+}
+
+footer address {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+address a {
+  color: #ff1fa5;
+  text-decoration: underline;
+}
